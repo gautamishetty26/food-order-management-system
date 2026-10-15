@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #292929;
+  }
+  
+  header {
+    background: #e85d04;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p {
+    margin-bottom: 0;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+  }
+  
+  .panel {
+    background: white;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+  }
+  
+  h2 {
+    color: #d9480f;
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+  }
+  
+  button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #e85d04;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #c94c00;
+  }
+  
+  .secondary {
+    background: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .food-card,
+  .order-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fffdfb;
+    overflow-wrap: anywhere;
+  }
+  
+  .food-card h3,
+  .order-card h3 {
+    margin-top: 0;
+  }
+  
+  .price {
+    color: #e85d04;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .message {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+  }
+  
+  footer {
+    background: #292929;
+    color: white;
+    text-align: center;
+    padding: 18px;
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      width: 94%;
+    }
+  
+    .panel {
+      padding: 16px;
+    }
+  }
+  

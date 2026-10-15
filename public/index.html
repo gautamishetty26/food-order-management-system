@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Food Order Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍔 Foodie</h1>
+    <p>Food Order Management System</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Add Food Item</h2>
+      <form id="foodForm">
+        <input id="foodName" placeholder="Food name" required>
+        <input id="foodCategory" placeholder="Category (Pizza, Snacks...)" required>
+        <input id="foodPrice" type="number" min="1" placeholder="Price (₹)" required>
+        <button type="submit">Add Food</button>
+      </form>
+      <p id="foodMessage" class="message"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Our Menu</h2>
+      <button id="refreshButton" class="secondary">Refresh Menu</button>
+      <div id="foodList" class="food-grid">Loading menu...</div>
+    </section>
+
+    <section class="panel">
+      <h2>Place an Order</h2>
+      <form id="orderForm">
+        <input id="customerName" placeholder="Customer name" required>
+        <input id="phone" type="tel" pattern="[0-9]{10}"
+          placeholder="10-digit phone number" required>
+
+        <label for="foodSelect">Choose food</label>
+        <select id="foodSelect" required>
+          <option value="">Select a food item</option>
+        </select>
+
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="number" min="1" value="1" required>
+
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="orderMessage" class="message"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Customer Orders</h2>
+      <button id="ordersButton" class="secondary">View Orders</button>
+      <div id="orderList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Foodie | Food Order Management REST API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
